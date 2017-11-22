@@ -1,1 +1,5 @@
 # sudoku-solver
+
+Working through www.interactivepython.org 's algorithms and data structures course I came across an interesting exercise to write a script to solve a sudoku puzzle. Challenege accepted. At this point I had been slacking on Python for a while, so I decided to use the opportunity as a refresher on classes. I wrote both nodes and puzzles as classes, and implemented the solving under the puzzle class. This solver not only works for straightforward puzzles that can be resolved without guessing, but also for those which do require guessing. While the solve works left-to-right and top-to-bottom, it would make more sense to make guesses for the node with the fewest possibilities remaining first. Still, this works.
+
+But, to be honest, this is absolutely the slow way to solve these problems as they can be handled in a more straightforward and mathematical manner. But, like I said, a refresher on classes. As of right now, the script is setup to import puzzles from a text file in a particular format, solve them all and output the sum of the three-digit number located in the top leftmost square. This is the solution to a particular Euler problem.
